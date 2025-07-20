@@ -32,21 +32,3 @@ document.querySelectorAll('#navLinks a').forEach(link => {
   });
 });
 
-// Show/hide button on scroll
-const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-
-window.onscroll = function () {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    scrollToTopBtn.style.display = "block";
-  } else {
-    scrollToTopBtn.style.display = "none";
-  }
-};
-
-// Scroll to top smoothly
-scrollToTopBtn.addEventListener("click", function () {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-});
