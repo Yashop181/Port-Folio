@@ -43,10 +43,12 @@ window.onscroll = function () {
   }
 };
 
-// Scroll to top smoothly
-scrollToTopBtn.addEventListener("click", function () {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
+  const dot = document.getElementById("cursorDot");
+  const ring = document.getElementById("cursorRing");
+
+  document.addEventListener("mousemove", (e) => {
+    dot.style.left = `${e.clientX}px`;
+    dot.style.top = `${e.clientY}px`;
+    ring.style.left = `${e.clientX}px`;
+    ring.style.top = `${e.clientY}px`;
   });
-});

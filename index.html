@@ -7,16 +7,20 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  
 <nav class="navbar">
-  <div class="logo">Yash Nigam</div>
+  <div class="logo">
+    <a href="/index.html">Yash Nigam</a>
+  </div>
 
   <button class="hamburger" id="hamburger">&#9776;</button>
 
   <ul class="nav-links" id="navLinks">
+    <li><a href="/index.html">Home</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="contact.html">Contact</a></li>
   </ul>
 
   <button id="themeToggle">🌓</button>
@@ -69,9 +73,14 @@
   </div>
 </section>
 
+  <section class="section hidden" id="skills">
+            <button class="colorful-border-button">Contact Form</button>
 
 
-  
+  </section>
+
+
+
 
   <section class="section hidden" id="skills">
     <h2>Skills</h2>
@@ -181,7 +190,9 @@
         <a href="https://crud-ivory-seven.vercel.app/" target="_blank">Live Demo</a>
       </p>
     </div>
+    <br>
     </div>
+
   </section>
   
 
@@ -226,9 +237,13 @@
   </div>
 </footer>
 
+
+
 <!-- Scroll to Top Button -->
 <button id="scrollToTopBtn" title="Go to top">&#8679;</button>
-
+<!-- Cursor Elements (don't wrap these) -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
 
   <script src="script.js"></script>
 </body>
