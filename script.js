@@ -32,7 +32,6 @@ document.querySelectorAll('#navLinks a').forEach(link => {
   });
 });
 
-// Show/hide button on scroll
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
 window.onscroll = function () {
@@ -42,6 +41,14 @@ window.onscroll = function () {
     scrollToTopBtn.style.display = "none";
   }
 };
+
+// Scroll to top when clicked
+scrollToTopBtn.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
 
   const dot = document.getElementById("cursorDot");
   const ring = document.getElementById("cursorRing");
